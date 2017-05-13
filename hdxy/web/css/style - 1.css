@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-24 13:25:21
+ * @version $Id$
+ */
+/*======== 全局 ========*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body { font-size:12px; color:#666; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:24px; }
+fieldset, img { border:0; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; } 
+textarea { resize:none; } //禁用了文本的拖拉，尤其在谷歌下
+p{ text-align:justify; text-justify:distribute;} //为了使文本段落左右两边对齐
+/*======== Link ========*/
+a { color: #000; text-decoration:none; }
+a:hover { color: #f60; text-decoration:none; }
+.container{width:100%;padding:0px;}
+.row,.box-ban{width:63%;margin:0 auto;}
+#menu a{color:#383838;}
+#menu a:hover{color:#987351;border-bottom:3px solid #987351;background:none;}
+#menu .active {color:#987351;border-bottom:3px solid #987351;}
+.navbar-nav>li>a{line-height:70px;font-size:1.5rem;padding:15px 18px;}
+.carousel-control .left{background:url(images/anniu1.png);}
+.carousel-control .right{background:url(images/anniu2.png);}
+.item-title {text-align:center;margin:78px 0;}
+#advantage ul li{float:left;margin-right:85px;}
+#advantage ul li:nth-child(5){margin-right:0px;}
+#advantage a,#advantage p{display:block;text-align:center;}
+#advantage a{width:172px;height:172px;border:1px solid #987351;border-radius:50% 50%;}
+#advantage{margin-bottom:100px;}
+#advantage ul li:nth-child(1) a{background:url(images/advantage/yingshi1.png) no-repeat center center;}
+#advantage ul li:nth-child(2) a{background:url(images/advantage/jijin1.png) no-repeat center center;}
+#advantage ul li:nth-child(3) a{background:url(images/advantage/faxing1.png) no-repeat center center;}
+#advantage ul li:nth-child(4) a{background:url(images/advantage/baohu1.png) no-repeat center center;}
+#advantage ul li:nth-child(5) a{background:url(images/advantage/shuju1.png) no-repeat center center;}
+#advantage ul li:nth-child(1) a:hover{background:#987351 url(images/advantage/yingshi2.png) no-repeat center center;}
+#advantage ul li:nth-child(2) a:hover{background:#987351 url(images/advantage/jijin2.png) no-repeat center center;}
+#advantage ul li:nth-child(3) a:hover{background:#987351 url(images/advantage/faxing2.png) no-repeat center center;}
+#advantage ul li:nth-child(4) a:hover{background:#987351 url(images/advantage/baohu2.png) no-repeat center center;}
+#advantage ul li:nth-child(5) a:hover{background:#987351 url(images/advantage/shuju2.png) no-repeat center center;}
+#advantage ul li p:nth-child(1){margin-top:45px;}
+#advantage ul li p:nth-child(2){margin-top:16px;}
+.fz{font-size: 1.5rem;}
+#introduce{width:100%;height:500px;background:url(images/home/gongsijieshao.png) no-repeat;background-size: 100%;}
+.introdction{width:450px;color:#fff;margin:0 auto;text-align:center;margin-bottom:82px;}
+.btn-more{width:150px;margin:0 auto;display:block;color:#967250;border:1px solid #967250;padding:11px 0;border-radius:20px;}
+.btn-more:hover{color:#fff;background: #987351;}
+.glyphicon{top:-1px;}
+#foot{width:100%;height:700px;background:url(images/foot/hzhb.png) no-repeat;background-size: 100%;}
+.page-change{width:1000px;margin:0 auto;}
+.page-change a{display:block; float: left;padding:5px;background:#fff;border-left: 2px solid #eee;}
+.tel-info{float:left;border-left: 1px solid #333;margin-left: 60px;padding-left:70px;}
+#foot-info{width:100%;height:190px;background:#1a1a1a;margin-top:78px;padding:50px 0;}
+#foot-info2{width:100%;height:130px;background:#0e0e0e;text-align:center;padding:20px 0;}
+#foot-info dl{float:left;}
+#foot-info dl:nth-child(2){margin-left:55px;border-left: 1px solid #4b4b4b;padding-left: 70px;}
+#foot-info dl:nth-child(3),#foot-info dl:nth-child(4){float:right;text-align:center;}
+#foot-info dl:nth-child(3) dd:nth-child(2),#foot-info dl:nth-child(4) dd:nth-child(2){margin-top: 5px;}
+#foot-info dl:nth-child(3){margin-left: 60px;}
+#foot-info .foot-adrress{background: url(images/foot/ADD.png) no-repeat 10px 0;padding-left:35px;}
+#foot-info .foot-tel{background: url(images/foot/Tel.png) no-repeat 8px 0;padding-left:35px;margin:10px 0;}
+#foot-info .foot-email{background: url(images/foot/Email.png) no-repeat 5px 0;padding-left:35px;}
+#hotsearchlist{float:left;width:515px;height:307px;overflow:hidden;}
+.topnewslist{float:left;overflow: hidden;margin-left:4%;}
+.topnewslist ul li{height:45px;text-align: right;line-height:44px;color:#000;border-bottom:solid 1px #CCC;}
+.topnewslist ul li:nth-child(1){}
+.topnewslist ul li a{float:left;text-align: left;color:#000;}
+.topnewslist ul li a:hover{color:#987351;}
+.up{color:#000;}
+.triangle{border-width: 5px 0px 5px 5px;border-color: #fff #fff #fff #987351 ;border-style:solid;height: 0;width: 0;margin-right: 5px;display: inline-block;}
