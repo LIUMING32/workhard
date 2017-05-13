@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-03-12 15:09:59
+ * @version $Id$
+ */
+	body{margin:0px;padding:0px;color:#000;font-family:"微软雅黑";}
+	#adminWarning thead th{text-align:center;}
+	#adminWarning tbody td{text-align:center;}
+	.center_title{height:40px;line-height:40px;background:#eee;border:1px solid #ddd;padding-left:15px;}
+	.dataTables_info{display:inline-block;}
+	.dataTables_paginate{float:right;display:inline-block;}
+	.dataTables_wrapper{margin-top: -50px;}
+	.dataTables_filter{float:right;margin-right: 15px;}
+	.graph{min-height:450px;border:1px solid #eee;}

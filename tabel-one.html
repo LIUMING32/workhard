@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">  
+	<link rel="stylesheet" href="./js/libs/dataTables/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/libs/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/libs/dataTables/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/libs/dataTables/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="./js/libs/echarts.min.js"></script>
+	<script type="text/javascript" src="./js/pages/interview.js"></script>
+	<script>
+	   //添加<script>标签的方法
+	   function addScriptTag(src){
+	   var script = document.createElement('script');
+	       script.setAttribute("type","text/javascript");
+	       script.src = src;
+	       document.body.appendChild(script);
+	   }
+	   window.onload = function(){
+	        addScriptTag("http://pm.linkworld.cn/json/test?callback=result");
+	    }
+	    function result(data) {
+	    	var data2 = data;
+	    	getTable(data2);
+	    	getGraph(data2);
+	    }
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- datatables分页表格开始 jsonp直接写在ajax里-->
+			<div class="col-xs-12">				
+				<div class="center_title" >
+		          <span>数据表一</span> 
+		        </div>
+				<div class="table-content table_box" style="margin-top:20px;">
+					<table class="table table-bordered table_log dt1 sortable scrolltable table_1" id="table1" border="1" align="center" >
+						<thead>
+					  		<tr  class="th1">
+							    <th class="w1 bd0 column_sortable">Inserted</th><!-- Inserted -->
+							    <th class="w2 column_sortable">Nick</th><!-- Nick -->
+							    <th class="w3 column_sortable">Purchases</th><!-- Purchases -->
+							    <th class="w4 column_sortable">Rank</th><!-- Rank -->
+							    <th class="w5 column_sortable">Updated</th><!-- Updated -->
+						  	</tr>
+						  	<tr class="nodata1" style="display:none">
+								<th colspan="5" style="text-align: center;">暂无记录</th>
+						 	</tr>
+						</thead>
+					</table>
+					<div id="main-page"></div>
+				</div>				
+			</div>
+			<!-- datatables分页表格结束 -->
+			<!-- laypage分页表格开始 jsonp创建动态js-->
+			<div class="col-xs-12" style="margin:20px 0 0px;">				
+				<div class="center_title" >
+		          <span>数据表二</span> 
+		        </div>
+				<div class="table-content table_box" style="margin-top:20px;">
+					<table class="table table-bordered table_log " id="table2" border="1" align="center" >
+						<thead>
+					  		<tr  class="th1">
+							    <th class="w1 bd0 column_sortable">Inserted</th><!-- Inserted -->
+							    <th class="w2 column_sortable">Nick</th><!-- Nick -->
+							    <th class="w3 column_sortable">Purchases</th><!-- Purchases -->
+							    <th class="w4 column_sortable">Rank</th><!-- Rank -->
+							    <th class="w5 column_sortable">Updated</th><!-- Updated -->
+						  	</tr>
+						  	<tr class="nodata1" style="display:none">
+								<th colspan="5" style="text-align: center;">暂无记录</th>
+						 	</tr>
+						</thead>
+					</table>
+					<div id="main-page2"></div>
+				</div>				
+			</div>
+			<!-- laypage分页表格结束 -->
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>功能展示</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">  
+	<script src="./js/libs/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/libs/echarts.min.js"></script>
+	<script type="text/javascript" src="./js/pages/interview2.js"></script>
+	<script>
+	   //添加<script>标签的方法
+	   function addScriptTag(src){
+	   var script = document.createElement('script');
+	       script.setAttribute("type","text/javascript");
+	       script.src = src;
+	       document.body.appendChild(script);
+	   }
+	   window.onload = function(){
+	        addScriptTag("http://pm.linkworld.cn/json/test?callback=result");
+	    }
+	    function result(data) {
+	    	var data2 = data;
+	    	getGraph2(data2);
+	    }
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<a class="btn btn-default" href="myIndex.html">返回</a>
+			</div>
+			<div class="col-xs-12" style="margin:0px 0 20px;">
+				<div class="center_title">
+		          <span>图形表单一</span> 
+		        </div>
+				<div id="graph" class="graph"></div>
+			</div>
+			<div class="col-xs-12" style="margin:20px 0 0px;">
+				<div class="center_title">
+		          <span>图形表单二</span> 
+		        </div>
+				<div id="graph2" class="graph"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
